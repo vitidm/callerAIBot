@@ -19,8 +19,8 @@ def forward_message(update, context):
         message_text = "<i>" + message_text + "</i>"
         message_text = "<b>🤖 Call Alert!\n--------------------\n\n</b>" + message_text
         
-        keyboard = [[InlineKeyboardButton("Check Call", url='https://example.com/group'),
-                     InlineKeyboardButton("Website", url='https://example.com/website')]]
+        keyboard = [[InlineKeyboardButton("Check Call", url='https://t.me/CAIcalls'),
+                     InlineKeyboardButton("Website", url='https://www.callerai.tech/')]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         context.bot.send_message(chat_id=-1001965203036, text=message_text, parse_mode=telegram.ParseMode.HTML, reply_markup=reply_markup)
 # Define the function for handling the button response
